@@ -17,7 +17,9 @@ namespace mersetaWebAPI.Extentions
             DataSet ds = null;
             try
             {
+
                 using (var client = new SshClient("")) // establishing ssh connection to server where MySql is hosted
+				 
                 {
                     client.Connect();
                     if (client.IsConnected)
